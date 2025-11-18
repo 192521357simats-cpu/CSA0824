@@ -1,0 +1,42 @@
+email = input("Enter an email: ")
+
+if "@" in email and "." in email and email.index("@") < email.rindex(".") and " " not in email:
+    print("Valid email address")
+else:
+    print("Invalid email address")
+
+
+
+
+def check_palindrome(s):                  comment-palindrome using recursion
+    if len(s) <= 1:
+        return True
+    return s[0] == s[-1] and check_palindrome(s[1:-1])
+
+text = input("Enter a string: ")
+
+if check_palindrome(text):
+    print("Palindrome")
+else:
+    print("Not Palindrome")
+
+
+comment-------to find largest prime number less than the given number
+n = int(input("Enter a number: "))
+
+for x in range(n-1, 1, -1):
+    if all(x % i for i in range(2, int(x**0.5)+1)):
+        print(x)
+        break
+
+
+
+
+
+
+
+
+
+
+
+
