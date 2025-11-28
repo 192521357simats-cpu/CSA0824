@@ -1,0 +1,15 @@
+#FIBONACCI USING WHILE LOOP
+# Input how many terms to generate
+n = int(input("Enter the number of terms: "))
+
+# First two terms
+a, b = 0, 1
+count = 0
+
+print("Fibonacci sequence:")
+
+# Generate Fibonacci using while loop
+while count < n:
+    print(a, end=" ")
+    a, b = b, a + b  # no need of printing statement
+    count += 1
