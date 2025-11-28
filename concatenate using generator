@@ -1,0 +1,19 @@
+#concatenate using generator
+def string_generator():
+    yield "Hello"
+    yield " "
+    yield "World"
+    yield "!"
+    
+# Concatenate using join
+result = "".join(string_generator())
+
+print(result)
+
+def string_generator(strings):
+    for s in strings:
+        yield s
+
+words = ["Python", " ", "is", " ", "fun"]
+result = "".join(string_generator(words))
+print(result)
