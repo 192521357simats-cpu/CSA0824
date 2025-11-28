@@ -1,0 +1,11 @@
+def check_palindrome(s):                  #comment-palindrome using recursion
+    if len(s) <= 1:
+        return True
+    return s[0] == s[-1] and check_palindrome(s[1:-1])
+
+text = input("Enter a string: ")
+
+if check_palindrome(text):
+    print("Palindrome")
+else:
+    print("Not Palindrome")
