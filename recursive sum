@@ -1,0 +1,9 @@
+#sum of 2 num using recursive function
+def add(a, b):
+    if b == 0:
+        return a
+    else:
+        return add(a + 1, b - 1)
+
+# Example:
+print(add(4, 5))  # Output: 9
