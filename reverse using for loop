@@ -1,0 +1,12 @@
+#reverse a string using for loop
+# Input string
+string = input("Enter a string: ")
+
+# Initialize empty string for the reversed result
+reversed_string = ""
+
+# Loop through the string in reverse order
+for i in range(len(string) - 1, -1, -1):
+    reversed_string += string[i]
+
+print("Reversed string:", reversed_string)
