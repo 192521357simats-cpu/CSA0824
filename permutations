@@ -1,0 +1,5 @@
+from itertools import permutations
+num=int(input('enter the number')
+print('the combinations are:)
+for p in permutations(num,len(num)
+print(' '.join(p))
