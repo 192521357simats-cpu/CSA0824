@@ -1,0 +1,15 @@
+#reduce(function, iterable[, initializer])-------------------format
+#longest word using reduce
+from functools import reduce
+
+sentence = "Find the length of the longest word in a sentence"
+
+longest_word = reduce(
+    lambda a, b: a if len(a) > len(b) else b,
+    sentence.split()
+)
+
+print(len(longest_word))   # length of longest word
+print(longest_word)        # the longest word itself
+
+
