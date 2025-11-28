@@ -1,0 +1,9 @@
+#comment-------to find largest prime number less than the given number
+n = int(input("Enter a number: "))
+
+for x in range(n-1, 1, -1):
+    if all(x % i for i in range(2, int(x**0.5)+1)):
+        print(x)
+        break
+
+
