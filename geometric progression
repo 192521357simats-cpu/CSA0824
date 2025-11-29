@@ -1,0 +1,11 @@
+nums = list(map(int, input('enter the number separated by space:').split()))
+
+gp = True
+r = nums[1] / nums[0]   # common ratio
+
+for i in range(2, len(nums)):
+    if nums[i] / nums[i-1] != r:
+        gp = False
+        break
+
+print("Geometric progression" if gp else "Not geometric")
