@@ -1,0 +1,7 @@
+def find_lcm(x,y):
+    lcm=max(x,y)
+    while True:
+        if lcm%x==0 and lcm%y==0:
+           return lcm
+        lcm+=1
+print('lcm of the two numbers is:',find_lcm(4,6))
