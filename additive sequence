@@ -1,0 +1,9 @@
+nums = list(map(int, input('enter::').split()))
+
+ok = True
+for i in range(2, len(nums)):
+    if nums[i] != nums[i-1] + nums[i-2]:
+        ok = False
+        break
+
+print("Additive sequence" if ok else "Not additive")
